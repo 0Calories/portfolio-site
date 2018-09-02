@@ -1,0 +1,8 @@
+{
+  "name": "PortfolioSite",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "author": "Ash Anand",
+  "license": "MIT"
+}
