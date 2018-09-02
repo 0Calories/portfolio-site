@@ -1,9 +1,17 @@
 .greeting-sign {
-    align-items:center;
     background: none;
-    border: 0.2rem solid white;
+    // border: 0.2rem solid white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    // min-width: 30rem;
+}
+
+.greeting-sign__title {
+    font-size: $xl-size;
+    font-weight: 1px;
+}
+
+.greeting-sign__subtitle {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 30rem;
+    justify-content: space-around;
+    font-size: $m-size;
 }
