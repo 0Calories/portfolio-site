@@ -20,6 +20,14 @@ export default class StarrySky extends React.Component {
         };
     };
 
+    fitCanvasToContainer = (canvas) => {
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+    };
+
     initializeStars = () => {
         let starArray = [];
         for (let i = 0; i < this.state.numStars; i++)
@@ -29,10 +37,8 @@ export default class StarrySky extends React.Component {
             console.log(this.state.stars)
 
             const canvas = this.refs.canvas;
-            canvas.width = canvas.clientWidth;
-            canvas.height = canvas.clientHeight;
+            //this.fitCanvasToContainer(canvas);
             const ctx = canvas.getContext("2d");
-
 
             this.drawStars(canvas, ctx);
         });
@@ -55,13 +61,13 @@ export default class StarrySky extends React.Component {
     };
 
     componentDidMount() {
-        this.initializeStars();
+        // this.initializeStars();
+        // <canvas ref="canvas" width="640" height="260" className="starry-sky__canvas" />
     }
 
     render() {
         return (
             <div className="starry-sky">
-                <canvas ref="canvas" width="640" height="260" className="starry-sky__canvas" />
                 <GreetingSign />
             </div>
         );
