@@ -1,7 +1,10 @@
 .starry-sky {
+    align-items:center;
     background: $sky;
     color: white;
+    display: flex;
     height: $sky-size * 2;
+    justify-content: center;
     margin-bottom: $m-size;
-    padding: 0 0 0 0;
+    padding: $m-size;
 }
