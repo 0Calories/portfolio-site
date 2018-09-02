@@ -2,7 +2,7 @@ import React from 'react';
 
 import GreetingSign from './GreetingSign';
 
-const STAR_RADIUS = 3;
+const STAR_RADIUS = 5;
 
 export default class StarrySky extends React.Component {
 
@@ -44,7 +44,8 @@ export default class StarrySky extends React.Component {
         for (let i = 0; i < this.state.numStars; i++) {
             const star = this.state.stars[i];
             ctx.beginPath();
-            ctx.arc(star.xPos, star.yPos, STAR_RADIUS, 0, Math.PI * 2, false);
+            ctx.fillRect(star.xPos, star.yPos, STAR_RADIUS, STAR_RADIUS)
+            
             ctx.fillStyle = "rgb(" + 
                 Math.floor(Math.random() * 256) + "," +
                 Math.floor(Math.random() * 256) + "," +
