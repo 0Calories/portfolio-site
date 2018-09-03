@@ -1,15 +1,15 @@
 .greeting-sign {
     background: none;
-    // border: 0.2rem solid white;
-    // min-width: 30rem;
     z-index: 1;
 }
 
 .greeting-sign__title {
     font-size: $xxl-size;
+    color: white;
 }
 
 .greeting-sign__subtitle {
+    color: $light-blue;
     display: flex;
     justify-content: space-around;
     font-size: $l-size;
