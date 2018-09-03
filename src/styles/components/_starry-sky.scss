@@ -3,13 +3,11 @@
     background: $sky;
     color: white;
     display: flex;
-    height: $sky-size * 2;
+    height: $sky-size;
     justify-content: center;
-    margin-bottom: $m-size;
     padding: $m-size;
 }
 
 .starry-sky__canvas {
-
     position: absolute;
 }

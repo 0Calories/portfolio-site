@@ -1,6 +1,7 @@
 import React from 'react';
 
 import StarrySky from './StarrySky';
+import Navbar from './Navbar/Navbar';
 
 export default class Application extends React.Component {
 
@@ -8,6 +9,7 @@ export default class Application extends React.Component {
         return (
             <div>
                 <StarrySky />
+                <Navbar />
             </div>
         );
     }
