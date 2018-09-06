@@ -1,0 +1,9 @@
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.section__header {
+    border-bottom: 0.4rem solid $light-blue;
+    font-size: $l-size;
+}
