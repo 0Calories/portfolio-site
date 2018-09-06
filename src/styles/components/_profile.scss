@@ -1,0 +1,12 @@
+.profile-box {
+    border: 0.1rem solid gray;
+    border-radius: 10px;
+    padding: $s-size;
+}
+
+.profile-box__desc {
+    align-items: center;
+    display: flex;
+    font-size: $m-size;
+    justify-content: center;
+}

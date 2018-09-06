@@ -1,9 +1,17 @@
 .section {
+    align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .section__header {
+    display: inline-block;
     border-bottom: 0.4rem solid $light-blue;
     font-size: $l-size;
+}
+
+.section__body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
