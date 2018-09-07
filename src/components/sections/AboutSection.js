@@ -1,13 +1,14 @@
 import React from 'react';
 
 import Profile from './../Profile';
+import SkillsBox from './../SkillsBox';
 
 const AboutSection = (props) => (
     <div className="section">
         <h1 className="section__header">{props.sectionName}</h1>
         <div className="section__body">
             <Profile />
-            <div>Test</div>
+            <SkillsBox />
         </div>
     </div>
 );

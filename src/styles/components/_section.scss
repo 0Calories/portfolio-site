@@ -2,16 +2,19 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: $xl-size;
+    padding: 0 $xl-size 0 $xl-size;
 }
 
 .section__header {
-    display: inline-block;
     border-bottom: 0.4rem solid $light-blue;
-    font-size: $l-size;
+    display: inline-block;
+    font-size: $xl-size;
+    margin-bottom: 12rem;
 }
 
 .section__body {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
