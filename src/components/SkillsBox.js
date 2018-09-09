@@ -1,9 +1,11 @@
 import React from 'react';
 
+import SkillBadge from './SkillBadge';
+
 const SkillsBox = () => (
     <div className="skills-box">
        <h1 className="skills-box__header">My Skills</h1>
-       <div>Test</div>
+       <SkillBadge imageName="HTML5" />
     </div>
 );
 
