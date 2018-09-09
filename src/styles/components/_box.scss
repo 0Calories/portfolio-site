@@ -1,21 +1,24 @@
-.skills-box {
-    align-items: center;
+.box {
     background-color: $sky;
     border: 0.2rem solid $sky;
     border-radius: 10px;
     box-shadow: 0px 2px 14px 6px #c5c5c5;
+    color: white;
+    -webkit-box-shadow: 0px 2px 14px 6px #c5c5c5;
+}
+
+.box-header {
+    border-bottom: 0.2rem solid $light-blue;
+    font-size: 2.8rem;
+    padding-bottom: 0.6rem;
+}
+
+.skills-box {
+    align-items: center;
     display: flex;
     flex-direction: column;
     padding: 0 $s-size;
     width: 50%;
-    -webkit-box-shadow: 0px 2px 14px 6px #c5c5c5;
-}
-
-.skills-box__header {
-    border-bottom: 0.2rem solid $light-blue;
-    color: white;
-    font-size: 2.8rem;
-    padding-bottom: 0.6rem;
 }
 
 .skills-box__container {
