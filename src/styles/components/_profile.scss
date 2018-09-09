@@ -1,13 +1,8 @@
 .profile-box {
     align-items: center;
-    background-color: $sky;
-    border: 0.2rem solid $sky;
-    border-radius: 10px;
-    box-shadow: 0px 2px 14px 6px #c5c5c5;
     display: flex;
     flex-direction: column;
     padding: $s-size;
-    -webkit-box-shadow: 0px 2px 14px 6px #c5c5c5;
 }
 
 .profile-box__pic {

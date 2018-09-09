@@ -10,7 +10,7 @@ const projects = [{
 }, {
     name: 'BottleIt',
     description: 'Bottle up your thoughts and cast them out to sea. A webapp that allows users to post anonymous messages and fetch random messages posted by others.',
-    badges: ['NodeJS', 'MongoDB']
+    badges: ['NodeJS', 'MongoDB', 'Mocha']
 }];
 
 const ProjectsSection = (props) => (

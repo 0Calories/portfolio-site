@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Profile = () => (
-    <div className="profile-box">
+    <div className="profile-box box">
         <img 
             src="/images/pic.png"
             className="profile-box__pic"

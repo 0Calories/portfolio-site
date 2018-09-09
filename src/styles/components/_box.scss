@@ -1,8 +1,8 @@
 /* General Box Styling */
 .box {
     background-color: $sky;
-    border: 0.2rem solid $sky;
-    border-radius: 10px;
+    //border: 0.4rem solid $sky;
+    border-radius: 6px;
     box-shadow: 0px 2px 14px 6px #c5c5c5;
     color: white;
     -webkit-box-shadow: 0px 2px 14px 6px #c5c5c5;
@@ -29,9 +29,12 @@
 .skills-box__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .skill-badge {
+    background-color: lighten($sky, 3%);
+    border-radius: 8px;
     display: block;
     height: auto;
     max-width: 10rem;
@@ -60,6 +63,7 @@
 .project-box__badges {
     border-top: solid 0.2rem $light-blue;
     display: flex;
+    justify-content: center;
 
     .skill-badge {
         max-width: 8rem;
