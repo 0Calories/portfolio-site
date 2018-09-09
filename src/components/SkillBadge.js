@@ -3,7 +3,7 @@ import React from 'react';
 const SkillBadge = (props) => (
     <div>
         <img 
-            src={"/images/" + props.imageName + ".png"}
+            src={"/images/" + props.badgeName + ".png"}
             className="skill-badge"
         />
     </div>

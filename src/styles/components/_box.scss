@@ -1,3 +1,4 @@
+/* General Box Styling */
 .box {
     background-color: $sky;
     border: 0.2rem solid $sky;
@@ -13,6 +14,8 @@
     padding-bottom: 0.6rem;
 }
 
+
+/* Skills Box Styling */
 .skills-box {
     align-items: center;
     display: flex;
@@ -33,4 +36,29 @@
     max-height: 10rem;
     margin: $m-size;
     width: auto;
+}
+
+/* Project Box Styling */
+.project-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    // padding: 0 $s-size;
+    width: 40%;
+}
+
+.project-box__desc {
+    border-top: solid 0.2rem $light-blue;
+    font-size: $m-size;
+    padding: $s-size;
+}
+
+.project-box__badges {
+    border-top: solid 0.2rem $light-blue;
+    display: flex;
+
+    .skill-badge {
+        max-width: 8rem;
+        max-height: 8rem;
+    }
 }
