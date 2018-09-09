@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SkillsBadge from './SkillBadge';
+import SkillBadge from './SkillBadge';
 
 const ProjectBox = (props) => (
     <div className="project-box box">
@@ -12,7 +12,7 @@ const ProjectBox = (props) => (
             />
             <p className="project-box__desc">{props.projectDescription}</p>
             <div className="project-box__badges">
-                <SkillsBadge badgeName="NodeJS" />
+                {props.badges.map((badge) => <SkillBadge badgeName={badge}/>)}
             </div>
         </div>
     </div>
