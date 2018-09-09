@@ -2,8 +2,12 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: $xl-size;
+    margin: $xl-size 0 $xl-size 0;
     padding: 0 $xl-size 0 $xl-size;
+}
+
+.section--projects {
+    background-color: $light-gray;
 }
 
 .section__header {
