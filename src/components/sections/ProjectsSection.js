@@ -14,7 +14,7 @@ const projects = [{
 }];
 
 const ProjectsSection = (props) => (
-    <div className="section section--projects">
+    <div className="projects-section section">
         <h1 className="section__header">{props.sectionName}</h1>
         <div className="section__body">
             {projects.map((project) => <ProjectBox projectName={project.name} projectDescription={project.description} badges={project.badges}/>)}
