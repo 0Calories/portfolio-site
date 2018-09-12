@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Profile from '../Profile';
+import WorkBox from '../WorkBox';
 
 const jobs = [{
     company: 'Cheetah Networks',
@@ -24,7 +25,7 @@ const WorkSection = (props) => (
     <div className="section work-section">
         <h1 className="section__header">{props.sectionName}</h1>
         <div className="section__body">
-            {/*projects.map((jobs) => <ProjectBox projectName={project.name} projectDescription={project.description} badges={project.badges}/>)*/}
+            {jobs.map((job) => <WorkBox companyName={job.company} dateRange={job.date} badges={job.badges}/>)}
         </div>
     </div>
 );

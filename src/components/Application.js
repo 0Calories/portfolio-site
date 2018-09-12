@@ -4,6 +4,7 @@ import StarrySky from './StarrySky';
 import Navbar from './Navbar/Navbar';
 import AboutSection from './sections/AboutSection';
 import ProjectsSection from './sections/ProjectsSection';
+import WorkSection from './sections/WorkSection';
 
 export default class Application extends React.Component {
 
@@ -14,6 +15,7 @@ export default class Application extends React.Component {
                 <Navbar />
                 <AboutSection sectionName="About"/>
                 <ProjectsSection sectionName="Projects" />
+                <WorkSection sectionName="Work Experience" />
             </div>
         );
     }
