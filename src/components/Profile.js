@@ -7,8 +7,12 @@ const Profile = () => (
             className="profile-box__pic"
         />
         <p className="profile-box__desc">
-            I'm a fourth year student at the University of Ottawa, studying Software Engineering.
-            TEST 123 RGYF GSF GUEFGWUEGF UWGEF GWEFUYGWE FUYG 
+            I'm currently a fourth year student at the University of Ottawa, studying Software Engineering.
+            My passion lies in full-stack web development, although I am interested in and have experience with other software-related fields too.
+            <br />
+            <br />
+            I enjoy learning new things and improving my development skills with my free time.
+            Come check out the cool stuff I've been working on!
         </p>
     </div>
 );
