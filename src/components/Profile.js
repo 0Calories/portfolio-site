@@ -6,7 +6,10 @@ const Profile = () => (
             src="/images/pic.png"
             className="profile-box__pic"
         />
-        <p className="profile-box__desc">Test description asdf 123 lorem ipsum fuck shit thing</p>
+        <p className="profile-box__desc">
+            I'm a fourth year student at the University of Ottawa, studying Software Engineering.
+            TEST 123 RGYF GSF GUEFGWUEGF UWGEF GWEFUYGWE FUYG 
+        </p>
     </div>
 );
 
