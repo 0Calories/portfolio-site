@@ -75,5 +75,14 @@
 
 /* Work Box Styling */
 .work-box {
-    
+
+}
+
+.work-box__date {
+    font-size: $m-font;
+    color: white; //$light-blue;
+}
+
+.work-box__desc {
+    font-size: $s-font;
 }
