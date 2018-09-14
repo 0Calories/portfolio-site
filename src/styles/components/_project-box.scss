@@ -22,6 +22,7 @@
 
 .project-box__image {
     vertical-align: middle;
+    background-color: #D95141;
     border: solid 0.3rem $light-blue;
     border-radius: 50%;
     max-width: 10rem;
@@ -93,4 +94,32 @@
 .project-box__header-strike:after {
     left: 0.5em;
     margin-right: -50%;
+}
+
+
+
+
+
+
+/* Animations */
+@keyframes spin-clockwise {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(270deg); }
+}
+
+@keyframes spin-counter-clockwise {
+    from { transform: rotate(270deg); }
+    to { transform: rotate(0deg); }
+}
+
+.project-box__image--opened {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;   
+    animation-name: spin-clockwise;
+}
+
+.project-box__image--closed {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;   
+    animation-name: spin-counter-clockwise;
 }
