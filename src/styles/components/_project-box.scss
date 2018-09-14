@@ -28,18 +28,17 @@
     max-height: 10rem;
 }
 
+.project-box__container {
+    display: none;
+}
 
 .project-box__desc {
     border-top: solid 0.2rem $light-blue;
-    display: none;
     font-size: $s-font;
     padding: $s-size;
 }
 
 .project-box__badges {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     // border-top: solid 0.2rem $light-blue; // Disable border until information is displayed
     display: flex;
     justify-content: center;
@@ -50,6 +49,19 @@
         max-height: 6.5rem;
     }
 }
+
+
+/* Button Container */
+.project-box__button-container {
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    left: 0;
+    margin-bottom: $l-size;
+    position: absolute;
+    width: 100%;
+}
+
 
 
 

@@ -14,9 +14,16 @@ const ProjectBox = (props) => (
             </div>
         </div>
 
-        <p className="project-box__desc">{props.projectDescription}</p>
-        <div className="project-box__badges">
-            {props.badges.map((badge) => <SkillBadge badgeName={badge}/>)}
+        <div className="project-box__container">
+            <p className="project-box__desc">{props.projectDescription}</p>
+            <div className="project-box__badges">
+                {props.badges.map((badge) => <SkillBadge badgeName={badge}/>)}
+            </div>
+        </div>
+
+        <div className="project-box__button-container">
+            <button>Show Me!</button>
+            <button>GitHub</button>
         </div>
     </div>
 );
