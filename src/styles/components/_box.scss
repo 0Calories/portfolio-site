@@ -45,34 +45,6 @@
     width: auto;
 }
 
-
-
-/* Project Box Styling */
-.project-box {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    // padding: 0 $s-size;
-    width: 40%;
-}
-
-.project-box__desc {
-    border-top: solid 0.2rem $light-blue;
-    font-size: $s-font;
-    padding: $s-size;
-}
-
-.project-box__badges {
-    border-top: solid 0.2rem $light-blue;
-    display: flex;
-    justify-content: center;
-
-    .skill-badge {
-        max-width: 8rem;
-        max-height: 8rem;
-    }
-}
-
 /* Work Box Styling */
 .work-box {
 

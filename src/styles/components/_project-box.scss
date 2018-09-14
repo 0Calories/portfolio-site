@@ -1,0 +1,84 @@
+/* Project Box Styling */
+.project-box {
+    position: relative;
+    min-height: 30rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    // padding: 0 $s-size;
+    width: 40%;
+}
+
+.project-box__header-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project-box__header {
+    border: none;
+}
+
+.project-box__image {
+    vertical-align: middle;
+    border: solid 0.3rem $light-blue;
+    border-radius: 50%;
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+
+.project-box__desc {
+    border-top: solid 0.2rem $light-blue;
+    display: none;
+    font-size: $s-font;
+    padding: $s-size;
+}
+
+.project-box__badges {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    // border-top: solid 0.2rem $light-blue; // Disable border until information is displayed
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .skill-badge {
+        max-width: 6.5rem;
+        max-height: 6.5rem;
+    }
+}
+
+
+
+/* Image Strike-thru line effect */
+.project-box__header-strike {
+    color: $light-blue;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-box__header-strike:before,
+.project-box__header-strike:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 50%;
+    border-top-style: solid;
+    border-top-width: 0.2rem;
+}
+
+.project-box__header-strike:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.project-box__header-strike:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
