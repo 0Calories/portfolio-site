@@ -5,7 +5,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    // padding: 0 $s-size;
     width: 40%;
 }
 
@@ -25,6 +24,7 @@
     background-color: #D95141;
     border: solid 0.3rem $light-blue;
     border-radius: 50%;
+    cursor: pointer;
     max-width: 10rem;
     max-height: 10rem;
 }
@@ -127,14 +127,21 @@
 .project-box__container--visible {
     opacity: 1;
     max-height: 500rem;
+
     transition: max-height 1s ease-in, opacity 0.5s ease-in;
+    -moz-transition: max-height 1s ease-in, opacity 0.5s ease-in;
+    -o-transition: max-height 1s ease-in, opacity 0.5s ease-in;
     -webkit-transition: max-height 1s ease-in, opacity 0.5s ease-in;
 }
 
 .project-box__container--invisible {
     max-height: 0;
     overflow: hidden;
+
     transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    -moz-transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    -o-transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
     -webkit-transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+
     opacity: 0;
 }

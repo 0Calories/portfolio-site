@@ -8,11 +8,10 @@ export default class StarrySky extends React.Component {
 
     state = {
         stars: [],
-        numStars: 40
+        numStars: 100
     };
 
     generateStar = () => {
-        console.log('generateStar() called');
         return {
             xPos: Math.random() * this.refs.canvas.width,
             yPos: Math.random() * this.refs.canvas.height
@@ -22,24 +21,23 @@ export default class StarrySky extends React.Component {
 
     fitCanvasToContainer = (canvas) => {
         canvas.style.width = '100%';
-        canvas.style.height = '100%';
+        canvas.style.height = '50%';
 
         canvas.width = canvas.offsetWidth;
         canvas.height = canvas.offsetHeight;
     };
 
     initializeStars = () => {
+        const canvas = this.refs.canvas;
+        this.fitCanvasToContainer(canvas);
+        const ctx = canvas.getContext("2d");
+
         let starArray = [];
         for (let i = 0; i < this.state.numStars; i++)
             starArray.push(this.generateStar());
 
         this.setState({ stars: starArray }, () => {
             console.log(this.state.stars)
-
-            const canvas = this.refs.canvas;
-            //this.fitCanvasToContainer(canvas);
-            const ctx = canvas.getContext("2d");
-
             this.drawStars(canvas, ctx);
         });
     };
@@ -61,13 +59,18 @@ export default class StarrySky extends React.Component {
     };
 
     componentDidMount() {
-        // this.initializeStars();
-        // <canvas ref="canvas" width="640" height="260" className="starry-sky__canvas" />
+        this.initializeStars();
+        window.addEventListener("resize", this.initializeStars);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.initializeStars);
     }
 
     render() {
         return (
             <div className="starry-sky">
+                <canvas ref="canvas" width="0" height="0" className="starry-sky__canvas" />
                 <GreetingSign />
             </div>
         );
