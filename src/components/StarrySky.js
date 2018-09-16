@@ -3,6 +3,7 @@ import React from 'react';
 import GreetingSign from './GreetingSign';
 
 const FPS = 40;
+const NUM_STARS = 100;
 
 const STAR_RADIUS_MIN = 4;
 const STAR_RADIUS_MAX = 8;
@@ -12,11 +13,12 @@ const STAR_COLOURS = ['2,144,254', '80,235,237', '247,31,121', '255,252,102', '1
 let canvas = undefined;
 let ctx = undefined;
 
+
 export default class StarrySky extends React.Component {
 
     state = {
         stars: [],
-        numStars: 100,
+        numStars: NUM_STARS,
         width: window.innerWidth,
         height: window.innerHeight
     };
