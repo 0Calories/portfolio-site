@@ -26,14 +26,13 @@ export default class ProjectBox extends React.Component {
                     <div className="project-box__header-strike">
                         <img
                             src={"/images/projects/" + this.props.projectName + "-icon.png"}
-                            ref='spinner'
                             className={this.state.opened ? "project-box__image project-box__image--opened" : "project-box__image project-box__image--closed"}
                             onClick={this.toggleOpen}
                         />
                     </div>
                 </div>
 
-                <div className="project-box__container">
+                <div className={this.state.opened ? "project-box__container project-box__container--visible" : "project-box__container project-box__container--invisible"}>
                     <p className="project-box__desc">{this.props.projectDescription}</p>
                     <div className="project-box__badges">
                         {this.props.badges.map((badge) => <SkillBadge badgeName={badge} />)}

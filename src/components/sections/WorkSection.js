@@ -9,7 +9,7 @@ const jobs = [{
     description: 'Placeholder',
     badges: []
 }, {
-    company: 'CNW Canada Newswire',
+    company: 'Cision Canada',
     date: 'September 2017 - December 2017',
     description: 'Placeholder',
     badges: []

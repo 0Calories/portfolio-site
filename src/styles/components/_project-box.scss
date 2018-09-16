@@ -30,11 +30,11 @@
 }
 
 .project-box__container {
-    display: none;
+    border-bottom: solid 0.2rem $light-blue;
+    margin-bottom: 8rem;
 }
 
 .project-box__desc {
-    border-top: solid 0.2rem $light-blue;
     font-size: $s-font;
     padding: $s-size;
 }
@@ -122,4 +122,19 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;   
     animation-name: spin-counter-clockwise;
+}
+
+.project-box__container--visible {
+    opacity: 1;
+    max-height: 500rem;
+    transition: max-height 1s ease-in, opacity 0.5s ease-in;
+    -webkit-transition: max-height 1s ease-in, opacity 0.5s ease-in;
+}
+
+.project-box__container--invisible {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    -webkit-transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
 }

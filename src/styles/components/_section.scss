@@ -9,7 +9,7 @@
 /* Projects Section */
 .projects-section {
     background-color: $light-gray;
-    padding-bottom: $xl-size;
+    padding-bottom: 30rem;
 }
 
 .section__header {
@@ -20,6 +20,7 @@
 }
 
 .section__body {
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
