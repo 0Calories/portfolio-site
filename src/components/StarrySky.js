@@ -4,23 +4,25 @@ import GreetingSign from './GreetingSign';
 
 const STAR_RADIUS = 5;
 
+const STAR_COLOURS = ['#36c5c8', '#f71f79', '#15d1d4', '#fffc66', '#da015b', '#66ff73'];
+
 export default class StarrySky extends React.Component {
 
     state = {
         stars: [],
-        numStars: 100
+        numStars: 80
     };
 
     generateStar = () => {
         return {
             xPos: Math.random() * this.refs.canvas.width,
-            yPos: Math.random() * this.refs.canvas.height
-            // colour: Random colour from an array of selections
+            yPos: Math.random() * this.refs.canvas.height,
+            colour: STAR_COLOURS[Math.floor(Math.random() * STAR_COLOURS.length)]
         };
     };
 
     fitCanvasToContainer = (canvas) => {
-        canvas.style.width = '100%';
+        canvas.style.width = '95%';
         canvas.style.height = '50%';
 
         canvas.width = canvas.offsetWidth;
@@ -47,14 +49,16 @@ export default class StarrySky extends React.Component {
 
         for (let i = 0; i < this.state.numStars; i++) {
             const star = this.state.stars[i];
-            ctx.beginPath();
-            ctx.fillRect(star.xPos, star.yPos, STAR_RADIUS, STAR_RADIUS)
-            
-            ctx.fillStyle = "rgb(" + 
-                Math.floor(Math.random() * 256) + "," +
-                Math.floor(Math.random() * 256) + "," +
-                Math.floor(Math.random() * 256) + ")";
-            ctx.fill();
+            ctx.fillStyle = this.state.stars[i].colour;
+
+            // Rotate at a random angle along the center
+            ctx.save();
+            ctx.translate(star.xPos + (STAR_RADIUS / 2), star.yPos + (STAR_RADIUS / 2));
+            const degree = Math.floor(Math.random() * 360);
+            ctx.rotate(degree * Math.PI / 180);
+
+            ctx.fillRect(-STAR_RADIUS / 2, -STAR_RADIUS / 2, STAR_RADIUS, STAR_RADIUS)
+            ctx.restore();
         }
     };
 

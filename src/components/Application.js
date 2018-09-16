@@ -12,7 +12,7 @@ export default class Application extends React.Component {
         return (
             <div>
                 <StarrySky />
-                <Navbar />
+                {/*<Navbar />*/}
                 <AboutSection sectionName="About"/>
                 <ProjectsSection sectionName="Projects" />
                 <WorkSection sectionName="Work Experience" />
