@@ -40,8 +40,8 @@ export default class ProjectBox extends React.Component {
                 </div>
 
                 <div className="project-box__button-container">
-                    <button className="link-button">Show Me!</button>
-                    <button className="link-button">GitHub</button>
+                    <button className="link-button" href={this.props.link} target="_blank">Show Me!</button>
+                    <a className="link-button" href={this.props.github} target="_blank">GitHub</a>
                 </div>
             </div>
         );
