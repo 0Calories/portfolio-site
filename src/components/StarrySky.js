@@ -7,7 +7,7 @@ const FPS = 40;
 const STAR_RADIUS_MIN = 4;
 const STAR_RADIUS_MAX = 8;
 
-const STAR_COLOURS = ['54,197,200', '247,31,121', '21,209,212', '255,252,102', '218,1,91', '102,255,115'];
+const STAR_COLOURS = ['2,144,254', '80,235,237', '247,31,121', '255,252,102', '164, 255, 164', '255, 255, 255'];
 
 let canvas = undefined;
 let ctx = undefined;
@@ -16,7 +16,7 @@ export default class StarrySky extends React.Component {
 
     state = {
         stars: [],
-        numStars: 90,
+        numStars: 100,
         width: window.innerWidth,
         height: window.innerHeight
     };
