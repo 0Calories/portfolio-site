@@ -2,16 +2,21 @@ import React from 'react';
 
 import GreetingSign from './GreetingSign';
 
+const FPS = 40;
+
 const STAR_RADIUS_MIN = 4;
 const STAR_RADIUS_MAX = 8;
 
-const STAR_COLOURS = ['#36c5c8', '#f71f79', '#15d1d4', '#fffc66', '#da015b', '#66ff73'];
+const STAR_COLOURS = ['54,197,200', '247,31,121', '21,209,212', '255,252,102', '218,1,91', '102,255,115'];
+
+let canvas = undefined;
+let ctx = undefined;
 
 export default class StarrySky extends React.Component {
 
     state = {
         stars: [],
-        numStars: 80,
+        numStars: 90,
         width: window.innerWidth,
         height: window.innerHeight
     };
@@ -21,49 +26,57 @@ export default class StarrySky extends React.Component {
             xPos: Math.random() * this.refs.canvas.width,
             yPos: Math.random() * this.refs.canvas.height,
             radius: Math.floor((Math.random() * STAR_RADIUS_MAX) + STAR_RADIUS_MIN),
+            angle: Math.floor(Math.random() * 360),
+            opacity: Math.random(),
+            twinkleRate: Math.random() * 0.02,
             colour: STAR_COLOURS[Math.floor(Math.random() * STAR_COLOURS.length)]
         };
     };
 
     initializeStars = () => {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
-        console.log(this.state.width + ', ' + this.state.height);
 
-        const canvas = this.refs.canvas;
-        //this.fitCanvasToContainer(canvas);
-        const ctx = canvas.getContext("2d");
+        canvas = this.refs.canvas;
+        ctx = canvas.getContext("2d");
 
         let starArray = [];
         for (let i = 0; i < this.state.numStars; i++)
             starArray.push(this.generateStar());
 
-        this.setState({ stars: starArray }, () => {
-            console.log(this.state.stars)
-            this.drawStars(canvas, ctx);
-        });
+        this.setState({ stars: starArray }, () => this.drawStars());
     };
 
-    drawStars = (canvas, ctx) => {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawStars = () => {
+        if (canvas && ctx) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        for (let i = 0; i < this.state.numStars; i++) {
-            const star = this.state.stars[i];
-            ctx.fillStyle = star.colour;
+            for (let i = 0; i < this.state.numStars; i++) {
+                const star = this.state.stars[i];
 
-            // Rotate at a random angle along the center
-            ctx.save();
-            ctx.translate(star.xPos + (star.radius / 2), star.yPos + (star.radius / 2));
-            const degree = Math.floor(Math.random() * 360);
-            ctx.rotate(degree * Math.PI / 180);
+                if (star.opacity > 1) {
+                    star.twinkleRate *= -1;
+                } else if (star.opacity <= 0) {
+                    star.twinkleRate = Math.abs(star.twinkleRate);
+                }
 
-            ctx.fillRect(-star.radius / 2, -star.radius / 2, star.radius, star.radius)
-            ctx.restore();
+                star.opacity += star.twinkleRate;
+
+                ctx.save();
+
+                ctx.fillStyle = `rgb(${star.colour}, ${star.opacity})`;
+                ctx.translate(star.xPos + (star.radius / 2), star.yPos + (star.radius / 2));
+                ctx.rotate(star.angle * Math.PI / 180);
+                ctx.fillRect(-star.radius / 2, -star.radius / 2, star.radius, star.radius);
+
+                ctx.restore();
+            }
         }
     };
 
     componentDidMount() {
         this.initializeStars();
         window.addEventListener("resize", this.initializeStars);
+        setInterval(this.drawStars, 1000 / FPS);
     }
 
     componentWillUnmount() {
