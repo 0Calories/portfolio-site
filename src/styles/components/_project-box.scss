@@ -104,22 +104,22 @@
 /* Animations */
 @keyframes spin-clockwise {
     from { transform: rotate(0deg); }
-    to { transform: rotate(270deg); }
+    to { transform: rotate(360deg); }
 }
 
 @keyframes spin-counter-clockwise {
-    from { transform: rotate(270deg); }
+    from { transform: rotate(360deg); }
     to { transform: rotate(0deg); }
 }
 
 .project-box__image--opened {
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;   
     animation-name: spin-clockwise;
 }
 
 .project-box__image--closed {
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-fill-mode: forwards;   
     animation-name: spin-counter-clockwise;
 }
