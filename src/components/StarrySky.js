@@ -36,7 +36,10 @@ export default class StarrySky extends React.Component {
     };
 
     initializeStars = () => {
-        this.setState({ width: window.innerWidth, height: window.innerHeight });
+        // Update state only if window size has actually changed
+        if (this.state.width != window.innerWidth || this.state.height != window.innerHeight) {
+            this.setState({ width: window.innerWidth, height: window.innerHeight });
+        }
 
         canvas = this.refs.canvas;
         ctx = canvas.getContext("2d");
@@ -77,7 +80,7 @@ export default class StarrySky extends React.Component {
 
     onResize = () => {
         // Necessary for mobile devices, as the onResize event gets called at weird times
-        if (this.state.width != window.innerWidth && this.state.height != window.innerHeight) {
+        if (this.state.width != window.innerWidth || this.state.height != window.innerHeight) {
             this.initializeStars();
         }
     }
