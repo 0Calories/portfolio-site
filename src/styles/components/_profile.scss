@@ -21,3 +21,20 @@
     color: white;
     justify-content: center;
 }
+
+/* Media Queries */
+@media (max-width: $mobile-breakpoint) {
+    .profile-box {
+        margin-bottom: $l-size;
+        width: 100%;
+    }
+
+    .profile-box__desc {
+        font-size: $mobile-s-font;
+    }
+
+    .profile-box__pic {
+        height: 12rem;
+        width: 12rem;
+    }
+}

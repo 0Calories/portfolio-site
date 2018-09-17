@@ -40,14 +40,13 @@
 }
 
 .project-box__badges {
-    // border-top: solid 0.2rem $light-blue; // Disable border until information is displayed
     display: flex;
     justify-content: center;
     width: 100%;
 
     .skill-badge {
         max-width: 6.5rem;
-        max-height: 6.5rem;
+        height: auto;
     }
 }
 
@@ -174,4 +173,36 @@
     -webkit-transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
 
     opacity: 0;
+}
+
+
+
+/* Media Queries */
+@media (max-width: $mobile-breakpoint) {
+    .project-box {
+        margin-bottom: $l-size;
+        width: 100%;
+    }
+
+    .project-box__image {
+        max-width: 6rem;
+        max-height: 6rem;
+    }
+
+    .link-button {
+        background-color: $neon-cherry;
+        border: none;
+        border-bottom: 0.4rem solid darken($neon-cherry, 10%);
+        font-size: $mobile-m-font;
+        padding: $xs-size $s-size;
+    }
+
+    .project-box__desc {
+        font-size: $mobile-s-font;
+        padding: $s-size;
+    }
+
+    .project-box__badges .skill-badge {
+        max-width: 4rem;
+    }
 }

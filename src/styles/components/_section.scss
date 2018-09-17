@@ -31,3 +31,12 @@
 .work-section {
     padding-bottom: $xl-size;
 }
+
+
+/* Media Queries */
+@media (max-width: $mobile-breakpoint) {
+    .section__body {
+        align-items: center;
+        flex-direction: column;
+    }
+}

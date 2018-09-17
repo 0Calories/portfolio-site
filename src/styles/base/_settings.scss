@@ -6,14 +6,19 @@ $light-gray: #f0f0f0;
 $neon-cherry: #f71f79;
 
 // Spacing
+$xs-size: 0.8rem;
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 $xxl-size: 6.4rem;
 
-$desktop-breakpoint: 45rem;
+$mobile-breakpoint: 85rem;
 
 // Font Size
 $s-font: 2rem;
 $m-font: 2.1rem;
+
+// Mobile Font Sizes
+$mobile-s-font: 1.4rem;
+$mobile-m-font: 1.6rem;
