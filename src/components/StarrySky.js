@@ -68,7 +68,7 @@ export default class StarrySky extends React.Component {
 
                 ctx.save();
 
-                ctx.fillStyle = `rgb(${star.colour}, ${star.opacity})`;
+                ctx.fillStyle = `rgba(${star.colour}, ${star.opacity})`;
                 ctx.translate(star.xPos + (star.radius / 2), star.yPos + (star.radius / 2));
                 ctx.rotate(star.angle * Math.PI / 180);
                 ctx.fillRect(-star.radius / 2, -star.radius / 2, star.radius, star.radius);
