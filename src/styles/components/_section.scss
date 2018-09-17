@@ -2,8 +2,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: $xl-size 0 $xl-size 0;
-    padding: 0 $xl-size 0 $xl-size;
+    margin: $xl-size 0;
+    padding: 0 $xl-size;
 }
 
 /* Projects Section */
@@ -35,6 +35,11 @@
 
 /* Media Queries */
 @media (max-width: $mobile-breakpoint) {
+    .section {
+        margin: $s-size 0;
+        padding: 0 3.5rem;
+    }
+
     .section__body {
         align-items: center;
         flex-direction: column;
