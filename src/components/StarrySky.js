@@ -87,12 +87,12 @@ export default class StarrySky extends React.Component {
 
     componentDidMount() {
         this.initializeStars();
-        window.addEventListener("resize", this.initializeStars);
+        window.addEventListener('resize', this.initializeStars);
         setInterval(this.drawStars, 1000 / FPS);
     }
 
     componentWillUnmount() {
-        window.removeEventListener("resize", this.initializeStars);
+        window.removeEventListener('resize', this.initializeStars);
     }
 
     render() {

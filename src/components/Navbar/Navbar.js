@@ -3,14 +3,23 @@ import ReactDOM from 'react-dom';
 
 import NavbarButton from './NavbarButton';
 
+let navbarOff = undefined;
+
 export default class Navbar extends React.Component {
 
     state = {
         active: false
     };
 
+    updateNavbarOff = () => {
+        navbarOff = ReactDOM.findDOMNode(this).getBoundingClientRect().top;
+    };
+
     componentDidMount() {
-        let navbarOff = ReactDOM.findDOMNode(this).getBoundingClientRect().top;
+        navbarOff = ReactDOM.findDOMNode(this).getBoundingClientRect().top;
+
+        // When window is resized, we want to recalculate navbarOff
+        window.addEventListener('resize', this.updateNavbarOff)
 
         window.onscroll = () => {
             console.log(navbarOff);
@@ -20,6 +29,10 @@ export default class Navbar extends React.Component {
                 this.setState({ active: false });
             }
         };
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateNavbarOff);
     }
 
     render() {
