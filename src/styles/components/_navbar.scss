@@ -1,14 +1,23 @@
 .navbar {
-    background-color: $solid-black;
+    background-color: lighten($sky, 5%);
     border-bottom: .4rem solid $light-blue;
     display: flex;
     justify-content: flex-start;
+    // opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .navbar-button {
-    background-color: $solid-black;
+    background-color: lighten($sky, 5%);
     border: none;
     color: white;
     font-size: 2.4rem;
     padding: $s-size $l-size;
+}
+
+.navbar-button--active {
+    color: red;
 }

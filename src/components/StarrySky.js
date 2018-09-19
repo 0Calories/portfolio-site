@@ -79,8 +79,8 @@ export default class StarrySky extends React.Component {
     };
 
     onResize = () => {
-        // Necessary for mobile devices, as the onResize event gets called at weird times
-        if (this.state.width != window.innerWidth || this.state.height != window.innerHeight) {
+        // Call function only if the width is changed (height changes on scroll for mobile devices)
+        if (this.state.width != window.innerWidth) {
             this.initializeStars();
         }
     }

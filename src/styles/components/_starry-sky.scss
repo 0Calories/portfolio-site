@@ -1,6 +1,7 @@
 .starry-sky {
     align-items:center;
     background: $sky;
+    border-bottom: solid 2rem darken($sky, 4%);
     display: flex;
     justify-content: center;
     padding: $m-size;
