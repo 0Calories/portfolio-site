@@ -16,33 +16,11 @@ const scroll = Scroll.animateScroll;
 
 export default class Application extends React.Component {
 
-    spyAlert = () => {
-        alert('Scrollspy event triggered!');
-    }
-
-    componentDidMount() {
-
-        Events.scrollEvent.register('begin', () => {
-            console.log('Scroll spy begin');
-        });
-
-        Events.scrollEvent.register('end', () => {
-            console.log('Scroll spy end');
-        });
-
-        scrollSpy.update();
-    }
-
-    componentWillUnmount() {
-        Events.scrollEvent.remove('begin');
-        Events.scrollEvent.remove('end');
-    }
-
     render() {
         return (
             <div>
-                <Navbar />
                 <StarrySky />
+                <Navbar />
                 <Element name="sky-end" />
 
                 <Element name="About">
