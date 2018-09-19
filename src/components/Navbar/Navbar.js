@@ -11,28 +11,26 @@ export default class Navbar extends React.Component {
         active: false
     };
 
-    updateNavbarOff = () => {
-        navbarOff = ReactDOM.findDOMNode(this).getBoundingClientRect().top;
+    checkNavbarPosition = () => {
+        console.log(navbarOff);
+        if (window.pageYOffset >= navbarOff) {
+            this.setState({ active: true });
+        } else {
+            this.setState({ active: false });
+        }
     };
 
     componentDidMount() {
         navbarOff = ReactDOM.findDOMNode(this).getBoundingClientRect().top;
 
         // When window is resized, we want to recalculate navbarOff
-        window.addEventListener('resize', this.updateNavbarOff)
+        window.addEventListener('resize', this.checkNavbarPosition)
 
-        window.onscroll = () => {
-            console.log(navbarOff);
-            if (window.pageYOffset >= navbarOff) {
-                this.setState({ active: true });
-            } else {
-                this.setState({ active: false });
-            }
-        };
+        window.onscroll = this.checkNavbarPosition;
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', this.updateNavbarOff);
+        window.removeEventListener('resize', this.checkNavbarPosition);
     }
 
     render() {
