@@ -12,7 +12,6 @@ export default class Navbar extends React.Component {
     };
 
     checkNavbarPosition = () => {
-        console.log(navbarOff);
         if (window.pageYOffset >= navbarOff) {
             this.setState({ active: true });
         } else {

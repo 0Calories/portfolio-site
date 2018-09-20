@@ -52,3 +52,20 @@
     -o-transition: color 0.5s ease;
     -webkit-transition: color 0.5s ease;
 }
+
+/* Media Queries */
+@media (max-width: $mobile-breakpoint) {
+
+    .navbar {
+        border-bottom: .2rem solid $light-blue;
+        opacity: 1;
+        position: fixed;
+        top: 0;
+    }
+
+    .navbar-button {
+        font-size: $mobile-s-font;
+        padding: $s-size $m-size;
+    }
+
+}
