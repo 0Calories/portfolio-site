@@ -7,6 +7,10 @@
     width: 100%;
     z-index: 10;
 
+    // Box Shadow
+
+
+    // Animation
     transition: opacity 0.5s ease;
     -moz-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
@@ -17,6 +21,8 @@
     opacity: 1;
     position: fixed;
     top: 0;
+
+    // Animation
     transition: opacity 0.5s ease;
     -moz-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
@@ -29,8 +35,20 @@
     color: white;
     font-size: 2.4rem;
     padding: $s-size $l-size;
+
+    // Animation
+    transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
 }
 
 .navbar-button--active {
-    color: red;
+    color: $neon-cherry;
+
+    // Animation
+    transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
 }

@@ -20,6 +20,11 @@ export default class Navbar extends React.Component {
         }
     };
 
+    componentWillMount() {
+        // Scroll to the top to prevent breaking the sticky navbar
+        window.onbeforeunload = () => window.scrollTo(0, 0);
+    }
+
     componentDidMount() {
         navbarOff = ReactDOM.findDOMNode(this).getBoundingClientRect().top;
 
