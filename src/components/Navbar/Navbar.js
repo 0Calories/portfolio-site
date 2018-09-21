@@ -25,7 +25,7 @@ export default class Navbar extends React.Component {
     }
 
     componentDidMount() {
-        navbarOff = ReactDOM.findDOMNode(this).getBoundingClientRect().top;
+        navbarOff = document.getElementById('sky-end').getBoundingClientRect().top;
 
         // When window is resized, we want to recalculate navbarOff
         window.addEventListener('resize', this.checkNavbarPosition)

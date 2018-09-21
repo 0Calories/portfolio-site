@@ -5,12 +5,12 @@ import ProjectBox from '../ProjectBox';
 
 const projects = [{
     name: 'CallBell',
-    description: 'An IoT based Call Bell system. It includes a locally hosted Express.js server with a single POST endpoint, and a physical circuit with an Arduino MKR1000. The Arduino connects to the local network and sends a POST request to the server, causing a toast notification to appear on the server\'s host.',
+    description: 'An IoT based Call Bell system. It is composed of a circuit with an Arduino and push-button, and a script running off a computer. The Arduino is programmed to connect to the IP of the server\'s host computer. When the button is pressed, it sends a request to the server, which causes a pop-up notification to appear on the host computer. In more technical terms, the computer is running an Express.js server with a single POST endpoint, and the Arduino fires off a POST request to the server when the button is pressed.',
     badges: ['NodeJS', 'Arduino'],
     github: 'https://github.com/0Calories/iot-express-callbell'
 }, {
     name: 'BottleIt',
-    description: 'Bottle up your thoughts and cast them out to sea. A webapp that allows users to post anonymous messages and fetch random messages posted by others.',
+    description: 'Bottle up your thoughts and cast them out to sea. A web application that allows users to post anonymous messages and fetch random messages posted by others. I\'m currently working on the front-end of the application before I release it to the public. More to come soon!',
     badges: ['NodeJS', 'MongoDB', 'Mocha'],
     github: 'https://github.com/0Calories/bottle-it'
 }];

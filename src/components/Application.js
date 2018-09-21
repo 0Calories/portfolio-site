@@ -20,8 +20,8 @@ export default class Application extends React.Component {
         return (
             <div>
                 <StarrySky />
-                <Navbar />
-                <Element name="sky-end" />
+                <Navbar breakpoint={this.refs.skyEnd} />
+                <Element name="sky-end" id="sky-end" />
 
                 <Element name="About">
                     <AboutSection sectionName="About" />

@@ -13,6 +13,7 @@ export default class NavbarButton extends React.Component {
                     to={this.props.heading} 
                     activeClass="navbar-button--active" 
                     className="navbar-button__link"
+                    offset={-20}
                     onClick={this.handleClick} 
                     spy={true} 
                     smooth={true} 
