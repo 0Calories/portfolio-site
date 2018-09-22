@@ -1,8 +1,11 @@
 /* Work Box Styling */
 .work-box {
+    margin: $m-size;
+}
+
+.work-box-wrapper {
     flex: 1;
     flex-basis: 45%;
-    margin: $m-size;
 }
 
 .work-box__header {
@@ -19,4 +22,28 @@
 .work-box__desc {
     font-size: $s-font;
     padding: $m-size;
+}
+
+/* Media Queries */
+@media (max-width: $mobile-breakpoint) {
+
+    .work-box__header {
+        text-align: center;
+        padding: $s-size;
+    }
+
+    .work-box__date {
+        color: $neon-cherry; //$light-blue;
+        font-size: $mobile-m-font;
+        padding: 0 $m-size;
+    }
+
+    .work-box__desc {
+        font-size: $mobile-s-font;
+        padding: $s-size;
+    }
+
+    .box__badges-container .skill-badge {
+        max-width: 4rem;
+    }
 }

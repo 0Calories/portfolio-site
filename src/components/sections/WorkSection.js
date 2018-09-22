@@ -1,4 +1,5 @@
 import React from 'react';
+import Bounce from 'react-reveal/Bounce';
 import Flip from 'react-reveal/Flip';
 
 import Profile from '../Profile';
@@ -33,7 +34,13 @@ const WorkSection = (props) => (
         </Flip>
         
         <div className="section__body" id="work-section__body">
-            {jobs.map((job) => <WorkBox companyName={job.company} dateRange={job.date} description={job.description} badges={job.badges}/>)}
+            {jobs.map((job, index) => (
+                <div className="work-box-wrapper">
+                    <Bounce left={index % 2 ? false : true} right={index % 2 ? true : false}>
+                        <WorkBox companyName={job.company} dateRange={job.date} description={job.description} badges={job.badges} />
+                    </Bounce>
+                </div>
+            ))}
         </div>
     </div>
 );
