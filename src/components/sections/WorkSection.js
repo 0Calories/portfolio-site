@@ -12,17 +12,17 @@ const jobs = [{
 }, {
     company: 'Cision Canada',
     date: 'September 2017 - December 2017',
-    description: 'Placeholder',
+    description: 'I assisted in the maintenance and development of a REST web API used for scraping and distributing information from news sources. My tasks ranged from working on simple features and bugfixes, as well as the development of scripts used to aid the workflow of other members of the team. I also new technologies and demonstrated their viability for internal usage to the team.',
     badges: ['Java']
 }, {
     company: 'Ross Video',
     date: 'January 2017 - April 2017',
-    description: 'Placeholder',
+    description: 'During this work-term, I created new features for the UI of the \'OverDrive\' software, as well as migrated the UI software platform to the latest version.',
     badges: ['Java', 'JavaScript', 'HTML5', 'CSS3']
 }, {
     company: 'Agriculture and Agri-Food Canada',
     date: 'June 2016 - December 2017',
-    description: 'Placeholder',
+    description: 'During the Summer, I created a dashboard tool from scratch for monitoring the status of various server computers in the IT branch. I also worked part-time for the HR department after my placement; I managed and developed new features for their SharePoint site.',
     badges: ['Java', 'JavaScript', 'HTML5', 'CSS3'] 
 }];
 
