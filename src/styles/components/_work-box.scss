@@ -1,0 +1,22 @@
+/* Work Box Styling */
+.work-box {
+    flex: 1;
+    flex-basis: 45%;
+    margin: $m-size;
+}
+
+.work-box__header {
+    text-align: center;
+    padding-bottom: $m-size;
+}
+
+.work-box__date {
+    color: $neon-cherry; //$light-blue;
+    font-size: $m-font;
+    padding: $m-size;
+}
+
+.work-box__desc {
+    font-size: $s-font;
+    padding: $m-size;
+}

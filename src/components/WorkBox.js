@@ -8,11 +8,11 @@ const WorkBox = (props) => (
         <p className="work-box__date">{props.dateRange}</p>
         <p className="work-box__desc">{props.description}</p>
         <div className="work-box__container">
-            <img 
+            {/*<img 
                 src={"/images/work/" + props.companyName + ".png"} 
                 className="work-box__image"
-            />
-            <div className="work-box__badges">
+            />*/}
+            <div className="box__badges-container">
                 {props.badges.map((badge) => <SkillBadge badgeName={badge}/>)}
             </div>
         </div>

@@ -2,6 +2,7 @@
     background: none;
     display: flex;
     flex-direction: column;
+    text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.72);
     align-items: center;
     z-index: 1;
 }
@@ -40,7 +41,7 @@
     font-size: $xl-size;
     margin-top: $xl-size;
     opacity: 0;
-    padding: $s-size;
+    padding: $s-size $xs-size;
     position: relative;
 }
 

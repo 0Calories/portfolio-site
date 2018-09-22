@@ -42,18 +42,6 @@
     padding: $s-size;
 }
 
-.project-box__badges {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    .skill-badge {
-        max-width: 6.5rem;
-        height: auto;
-    }
-}
-
-
 /* Button Container */
 .project-box__button-container {
     bottom: 0;

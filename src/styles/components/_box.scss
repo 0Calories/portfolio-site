@@ -16,17 +16,13 @@ box-shadow: 11px 9px 15px -5px rgba(0,0,0,0.75);
     padding-bottom: 0.6rem;
 }
 
+.box__badges-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
-/* Work Box Styling */
-.work-box {
-
-}
-
-.work-box__date {
-    font-size: $m-font;
-    color: white; //$light-blue;
-}
-
-.work-box__desc {
-    font-size: $s-font;
+    .skill-badge {
+        max-width: 6.5rem;
+        height: auto;
+    }
 }

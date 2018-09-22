@@ -36,7 +36,7 @@ export default class ProjectBox extends React.Component {
 
                 <div className={this.state.opened ? "project-box__container project-box__container--visible" : "project-box__container project-box__container--invisible"}>
                     <p className="project-box__desc">{this.props.projectDescription}</p>
-                    <div className="project-box__badges">
+                    <div className="box__badges-container">
                         {this.props.badges.map((badge) => <SkillBadge badgeName={badge} />)}
                     </div>
                 </div>
