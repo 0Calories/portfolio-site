@@ -9,8 +9,6 @@ export default class ProjectBox extends React.Component {
     };
 
     toggleOpen = () => {
-        console.log(`On Click called! Opened=${!this.state.opened}`);
-
         this.setState((prevState) => ({ opened: !prevState.opened }));
     };
 

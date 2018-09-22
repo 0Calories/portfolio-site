@@ -4,13 +4,30 @@
 }
 
 .greeting-sign__title {
+    animation: 3s ease 1 0.5s fadeIn forwards;
+
     font-size: $xxl-size;
     color: white;
+    opacity: 0;
 }
 
 .greeting-sign__subtitle {
+    animation: 3s ease 1 1.25s fadeIn forwards;
+
     color: $light-blue;
     display: flex;
     justify-content: space-around;
     font-size: $l-size;
+    opacity: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
