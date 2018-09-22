@@ -1,4 +1,5 @@
 import React from 'react';
+import Flip from 'react-reveal/Flip';
 
 import Profile from '../Profile';
 import WorkBox from '../WorkBox';
@@ -27,7 +28,10 @@ const jobs = [{
 
 const WorkSection = (props) => (
     <div className="section work-section">
-        <h1 className="section__header">{props.sectionName}</h1>
+        <Flip left>
+            <h1 className="section__header">{props.sectionName}</h1>
+        </Flip>
+        
         <div className="section__body">
             {jobs.map((job) => <WorkBox companyName={job.company} dateRange={job.date} description={job.description} badges={job.badges}/>)}
         </div>

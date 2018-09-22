@@ -14,7 +14,7 @@ const GreetingSign = () => (
             smooth={true} 
             duration={500}
         >
-            <i className="greeting-sign__scroller fas fa-chevron-circle-down"></i>
+            <i className="greeting-sign__scroller fas fa-angle-double-down"></i>
         </Link>
         
     </div>

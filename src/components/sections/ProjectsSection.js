@@ -1,4 +1,5 @@
 import React from 'react';
+import Flip from 'react-reveal/Flip';
 
 import Profile from '../Profile';
 import ProjectBox from '../ProjectBox';
@@ -17,7 +18,10 @@ const projects = [{
 
 const ProjectsSection = (props) => (
     <div className="projects-section section">
-        <h1 className="section__header">{props.sectionName}</h1>
+        <Flip right>
+            <h1 className="section__header">{props.sectionName}</h1>
+        </Flip>
+        
         <div className="section__body">
             {projects.map((project) => <ProjectBox projectName={project.name} projectDescription={project.description} badges={project.badges} github={project.github}/>)}
         </div>
