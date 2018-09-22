@@ -5,6 +5,7 @@ import SkillBadge from './SkillBadge';
 const SkillsBox = () => (
     <div className="skills-box box">
         <h1 className="skills-box__header box-header">My Skills</h1>
+
         <div className="skills-box__container">
             <SkillBadge badgeName="Java" link="https://www.oracle.com/java/" />
             <SkillBadge badgeName="C++" link="https://isocpp.org/" />
@@ -19,6 +20,7 @@ const SkillsBox = () => (
             <SkillBadge badgeName="Bootstrap" link="https://getbootstrap.com/" />
             <SkillBadge badgeName="jQuery" link="https://jquery.com/" />
         </div>
+        
     </div>
 );
 

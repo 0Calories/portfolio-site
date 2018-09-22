@@ -4,6 +4,9 @@
     display: flex;
     flex-direction: column;
     padding: 0 $s-size;
+}
+
+.skills-box-wrapper {
     width: 50%;
 }
 
@@ -46,7 +49,7 @@
 
 /* Media Queries */
 @media (max-width: $mobile-breakpoint) {
-    .skills-box {
+    .skills-box-wrapper {
         width: 100%;
     }
 
