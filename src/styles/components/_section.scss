@@ -18,10 +18,12 @@
 }
 
 .section__header {
-    border-bottom: 0.4rem solid $light-blue;
+    border-bottom: 0.4rem solid $neon-cherry;
+    color: lighten($sky, 3%);
     display: inline-block;
     font-size: $xl-size;
     margin-bottom: 12rem;
+    padding-bottom: $s-size;
 }
 
 .section__body {
