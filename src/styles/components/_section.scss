@@ -46,6 +46,19 @@
     flex-flow: row wrap;
 }
 
+/* Contact Section */
+#contact-section {
+    background-color: $sky;
+    border-top: solid 2rem darken($sky, 4%);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 80rem;
+}
+
+#contact-section__header {
+    color: white;
+}
+
 
 /* Media Queries */
 @media (max-width: $mobile-breakpoint) {

@@ -6,6 +6,7 @@ import Navbar from './Navbar/Navbar';
 import AboutSection from './sections/AboutSection';
 import ProjectsSection from './sections/ProjectsSection';
 import WorkSection from './sections/WorkSection';
+import ContactSection from './sections/ContactSection';
 
 const Link = Scroll.Link;
 const Events = Scroll.Events;
@@ -32,6 +33,10 @@ export default class Application extends React.Component {
 
                 <Element name="Work Experience">
                     <WorkSection sectionName="Work Experience" />
+                </Element>
+
+                <Element name="Contact">
+                    <ContactSection sectionName="Contact" />
                 </Element>
             </div>
         );
