@@ -5,7 +5,7 @@ import SkillBadge from './SkillBadge';
 export default class ProjectBox extends React.Component {
 
     state = {
-        opened: false,
+        opened: true,
     };
 
     toggleOpen = () => {
