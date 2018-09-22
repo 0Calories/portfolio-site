@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Scroll from 'react-scroll';
 
 const Link = Scroll.Link;
@@ -14,7 +13,6 @@ export default class NavbarButton extends React.Component {
                     activeClass="navbar-button--active" 
                     className="navbar-button__link"
                     offset={-20}
-                    onClick={this.handleClick} 
                     spy={true} 
                     smooth={true} 
                     duration={500}
