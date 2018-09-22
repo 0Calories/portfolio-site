@@ -41,10 +41,10 @@ export default class Navbar extends React.Component {
         return (
             <div>
                 <div className={this.state.active ? "navbar navbar--sticky" : "navbar"}>
-                    <NavbarButton heading={'About'} iconClass={'fas fa-user'} />
+                    <NavbarButton heading={'About'} iconClass={'fas fa-id-card'} />
                     <NavbarButton heading={'Projects'} iconClass={'fas fa-lightbulb'} />
                     <NavbarButton heading={'Work Experience'} iconClass={'fas fa-briefcase'} />
-                    <NavbarButton heading={'Contact'} iconClass={'fas fa-address-card'} />
+                    <NavbarButton heading={'Contact'} iconClass={'fas fa-envelope'} />
                 </div>
             </div>
         );
