@@ -8,6 +8,7 @@
 
 .greeting-sign__title {
     animation: 3s ease 1 0.5s fadeIn forwards;
+    -webkit-animation: 3s ease 1 0.5s fadeIn forwards;
 
     font-size: $xxl-size;
     color: white;
@@ -16,17 +17,20 @@
 
 .greeting-sign__subtitle {
     animation: 3s ease 1 1.25s fadeIn forwards;
+    -webkit-animation: 3s ease 1 1.25s fadeIn forwards;
 
     color: $light-blue;
     display: flex;
     justify-content: space-around;
     font-size: $l-size;
+    margin-bottom: $xxl-size;
     opacity: 0;
 }
 
 .greeting-sign__scroller {
-    animation: 3s ease 1 1.25s fadeIn forwards;
-    
+    animation: levitate 2s infinite alternate;
+    -webkit-animation: levitate 2s infinite alternate;
+
     background-color: $light-blue;
     border-bottom: solid 0.4rem darken($light-blue, 25%);
     border-right: solid 0.4rem darken($light-blue, 25%);
@@ -35,8 +39,9 @@
     cursor: pointer;
     font-size: $xl-size;
     margin-top: $xl-size;
-    opacity: 0;
+    opacity: 1;
     padding: $s-size;
+    position: relative;
 }
 
 /* Animations */
@@ -47,5 +52,36 @@
 
     to {
         opacity: 1;
+    }
+}
+
+// @keyframes levitate {
+//     0%, 20%, 50%, 80%, 100% {
+//     @include transform(translateY(0));
+//   }
+// 	40% {
+//     @include transform(translateY(-30px));
+//   }
+// 	60% {
+//     @include transform(translateY(-15px));
+//   }
+// }
+
+@-webkit-keyframes levitate {
+    0% { 
+        transform: translateY(0); 
+    }
+
+    100% { 
+        transform: translateY(-20px);
+    }
+}
+@keyframes levitate {
+    0% { 
+        transform: translateY(0); 
+    }
+
+    100% { 
+        transform: translateY(-20px); 
     }
 }
