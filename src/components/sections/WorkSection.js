@@ -18,7 +18,7 @@ const jobs = [{
     company: 'Ross Video',
     date: 'January 2017 - April 2017',
     description: 'Placeholder',
-    badges: ['Java', 'HTML5', 'CSS3', 'JavaScript']
+    badges: ['Java', 'JavaScript', 'HTML5', 'CSS3']
 }, {
     company: 'Agriculture and Agri-Food Canada',
     date: 'June 2016 - December 2017',
