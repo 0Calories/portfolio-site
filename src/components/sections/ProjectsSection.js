@@ -1,4 +1,5 @@
 import React from 'react';
+import Bounce from 'react-reveal/Bounce';
 import Flip from 'react-reveal/Flip';
 
 import Profile from '../Profile';
@@ -23,7 +24,13 @@ const ProjectsSection = (props) => (
         </Flip>
         
         <div className="section__body">
-            {projects.map((project) => <ProjectBox projectName={project.name} projectDescription={project.description} badges={project.badges} github={project.github}/>)}
+            {projects.map((project, index) => (
+                <div className="project-box-wrapper">
+                    <Bounce left={index % 2 ? false : true} right={index % 2 ? true : false}>
+                        <ProjectBox projectName={project.name} projectDescription={project.description} badges={project.badges} github={project.github} />
+                    </Bounce>
+                </div>
+            ))}
         </div>
     </div>
 );

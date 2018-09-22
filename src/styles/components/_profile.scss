@@ -27,12 +27,10 @@
 
 /* Media Queries */
 @media (max-width: $mobile-breakpoint) {
-    .profile-box {
-        margin-bottom: $l-size;
-    }
 
     .profile-wrapper {
         width: 100%;
+        margin-bottom: $l-size;
     }
 
     .profile-box__desc {

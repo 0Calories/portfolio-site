@@ -5,6 +5,9 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+.project-box-wrapper {
     width: 40%;
 }
 
@@ -181,6 +184,10 @@
 @media (max-width: $mobile-breakpoint) {
     .project-box {
         margin-bottom: $l-size;
+    }
+
+    .project-box-wrapper {
+        
         width: 100%;
     }
 

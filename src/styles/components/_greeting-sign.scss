@@ -28,8 +28,8 @@
 }
 
 .greeting-sign__scroller {
-    animation: 3s ease 1 1.25s fadeIn forwards, 2s alternate infinite levitate;
-    -webkit-animation: 3s ease 1 1.25s fadeIn forwards, 2s alternate infinite levitate;
+    animation: 3s ease 1 1.25s fadeIn forwards, 1.5s alternate infinite levitate;
+    -webkit-animation: 3s ease 1 1.25s fadeIn forwards, 1.5s alternate infinite levitate;
 
     background-color: $light-blue;
     border-bottom: solid 0.4rem darken($light-blue, 25%);
