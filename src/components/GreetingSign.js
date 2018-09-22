@@ -10,7 +10,7 @@ const GreetingSign = () => (
 
         <Link 
             to="sky-end"
-            offset={-20}
+            offset={10}
             smooth={true} 
             duration={500}
         >

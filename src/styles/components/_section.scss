@@ -8,7 +8,7 @@
 
 /* About Section */
 .about-section {
-    margin: 8rem 0 20rem 0;
+    margin-top: 8rem;
 }
 
 /* Projects Section */
@@ -50,6 +50,10 @@
     .section__body {
         align-items: center;
         flex-direction: column;
+    }
+
+    .about-section {
+        margin: 4rem 0;
     }
 }
 

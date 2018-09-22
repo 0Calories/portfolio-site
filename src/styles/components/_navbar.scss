@@ -35,7 +35,8 @@
     color: white;
     cursor: pointer;
     font-size: 2rem;
-    padding: $s-size $l-size;
+    margin-left: $m-size;
+    padding: $s-size;
 
     // Animation
     transition: color 0.5s ease;
@@ -58,6 +59,7 @@
 @media (max-width: $mobile-breakpoint) {
 
     .navbar {
+        align-items: center;
         justify-content: center;
         border-bottom: .2rem solid $light-blue;
         opacity: 1;
@@ -67,7 +69,8 @@
 
     .navbar-button {
         // font-size: $mobile-s-font;
-        padding: $s-size $m-size;
+        padding: $s-size;
+        //margin-left: $m-size;
     }
 
     .navbar-button__text { 
