@@ -19,7 +19,9 @@ export default class NavbarButton extends React.Component {
                     smooth={true} 
                     duration={500}
                 >
-                    {this.props.heading}
+                    <i className={this.props.iconClass}></i>
+                    &emsp;
+                    <span className='navbar-button__text'>{this.props.heading}</span>
                 </Link>
             </div>
         );
