@@ -5,7 +5,7 @@ export default class ContactForm extends React.Component {
 
     render() {
         return (
-            <div className="contact-form-wrapper">
+            <div>
                 <form 
                     className="contact-form" 
                     action="https://formspree.io/aanan092@uottawa.ca"

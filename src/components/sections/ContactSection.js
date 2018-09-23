@@ -16,14 +16,22 @@ const ContactSection = (props) => (
         
 
         <div id="contact-section__body" className="section__body">
-            <ContactForm />
+            <Bounce bottom>
+                <div className="contact-form-wrapper">
+                    <ContactForm />
+                </div>
+            </Bounce>
+            
         </div>
 
-        <div id="contact-section__links">
-            <LinkBadge link="https://www.linkedin.com/in/ashwin-anand7/" iconClass="fab fa-linkedin-in" />
-            <LinkBadge link="https://github.com/0Calories" iconClass="fab fa-github" />
-            <LinkBadge link="/resume.pdf" iconClass="fas fa-file" />
-        </div>
+        <Bounce bottom>
+            <div id="contact-section__links">
+                <LinkBadge link="https://www.linkedin.com/in/ashwin-anand7/" iconClass="fab fa-linkedin-in" />
+                <LinkBadge link="https://github.com/0Calories" iconClass="fab fa-github" />
+                <LinkBadge link="/resume.pdf" iconClass="fas fa-file" />
+            </div>
+        </Bounce>
+        
 
     </div>
 );
