@@ -14,7 +14,7 @@ const Profile = () => (
             <br />
                 <br />
                 I enjoy learning new things and improving my development skills with my free time.
-                Come check out the cool stuff I've been working on, and feel free to drop me a message!
+                Come check out the cool stuff I've been working on!
         </p>
         </Fade>
         

@@ -11,3 +11,11 @@ body {
 .cherry-text {
     color: $neon-cherry;
 }
+
+input:required {
+    box-shadow: none;
+}
+
+textarea:required {
+    box-shadow: none;
+}

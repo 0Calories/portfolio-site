@@ -36,8 +36,9 @@
 }
 
 #contact-form-message {
-    height: 30rem;
     flex-grow: 0;
+    height: 30rem;
+    resize: vertical;
 }
 
 /* Media Queries */

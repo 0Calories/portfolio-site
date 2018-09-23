@@ -59,6 +59,13 @@
 #contact-section__header {
     color: white;
     margin-top: $s-size;
+    margin-bottom: $xl-size;
+}
+
+#contact-section__desc {
+    color: $light-blue;
+    font-size: 2rem;
+    margin-bottom: $xl-size;
 }
 
 
@@ -80,6 +87,10 @@
 
     .about-section {
         margin: 4rem 0;
+    }
+
+    #contact-section__desc {
+        font-size: $mobile-m-font;
     }
 }
 
