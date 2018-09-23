@@ -38,7 +38,45 @@
 #contact-form-message {
     flex-grow: 0;
     height: 30rem;
-    resize: vertical;
+    resize: none;
+}
+
+#contact-section__links {
+    display: flex;
+    justify-content: center;
+    margin: $l-size 0;
+}
+
+.link-badge {
+    background-color: lighten($sky, 3%);
+    border-bottom: solid 0.4rem darken($sky, 5%);
+    border-right: solid 0.4rem darken($sky, 5%);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: $l-font;
+    height: 2.5rem;
+    margin: $m-size;
+    padding: $m-size;
+    text-align: center;
+    width: 2.5rem;
+
+    transition: background-color 0.5s ease, border-bottom 0.5s ease, border-right 0.5s ease;
+    -moz-transition: background-color 0.5s ease, border-bottom 0.5s ease, border-right 0.5s ease;
+    -o-transition: background-color 0.5s ease, border-bottom 0.5s ease, border-right 0.5s ease;
+    -webkit-transition: background-color 0.5s ease, border-bottom 0.5s ease, border-right 0.5s ease;
+}
+
+.link-badge:hover {
+    background-color: $light-blue;
+    border-bottom: solid 0.4rem darken($light-blue, 25%);
+    border-right: solid 0.4rem darken($light-blue, 25%);
+    color: $neon-cherry;
+
+    transition: background-color 0.5s ease, border-bottom 0.5s ease, border-right 0.5s ease;
+    -moz-transition: background-color 0.5s ease, border-bottom 0.5s ease, border-right 0.5s ease;
+    -o-transition: background-color 0.5s ease, border-bottom 0.5s ease, border-right 0.5s ease;
+    -webkit-transition: background-color 0.5s ease, border-bottom 0.5s ease, border-right 0.5s ease;
 }
 
 /* Media Queries */
