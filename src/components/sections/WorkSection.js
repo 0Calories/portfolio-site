@@ -14,7 +14,7 @@ const jobs = [{
 }, {
     company: 'Cision Canada',
     date: 'September 2017 - December 2017',
-    description: 'I assisted in the maintenance and development of a REST web API used for scraping and distributing information from news sources. My tasks ranged from working on simple features and bugfixes, as well as the development of scripts used to aid the workflow of other members of the team. I also new technologies and demonstrated their viability for internal usage to the team.',
+    description: 'I assisted in the maintenance and development of a REST web API used for scraping and distributing information from news sources. My tasks ranged from working on simple features and bugfixes, as well as the development of scripts used to aid the workflow of other members of the team. I also researched new technologies and demonstrated their viability for internal usage to the team.',
     badges: ['Java']
 }, {
     company: 'Ross Video',
