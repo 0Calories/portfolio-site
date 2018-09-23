@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 export default class ContactForm extends React.Component {
-    
+
     render() {
         return (
             <div className="contact-form-wrapper">

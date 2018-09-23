@@ -39,3 +39,16 @@
     height: 30rem;
     flex-grow: 0;
 }
+
+/* Media Queries */
+@media (max-width: $mobile-breakpoint) {
+
+    .contact-form-wrapper {
+        width: 100%;
+    }
+
+    #contact-form-message {
+        height: 15rem;
+    }
+
+}
