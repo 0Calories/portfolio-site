@@ -24,6 +24,17 @@
     padding: $s-size;
 }
 
+.contact-form__submit {
+    background-color: $neon-cherry;
+    border: none;
+    border-bottom: 0.4rem solid darken($neon-cherry, 20%);
+    color: white;
+    cursor: pointer;
+    font-size: $m-font;
+    padding: $xs-size $s-size;
+
+}
+
 #contact-form-message {
     height: 30rem;
     flex-grow: 0;
