@@ -89,6 +89,14 @@
         margin: 4rem 0;
     }
 
+    #work-section__header {
+        font-size: 3.5rem;
+    }
+
+    #work-section__body {
+        flex-flow: column wrap;
+    }
+
     #contact-section__desc {
         font-size: $mobile-m-font;
     }

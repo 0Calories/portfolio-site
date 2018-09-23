@@ -30,7 +30,7 @@ const jobs = [{
 const WorkSection = (props) => (
     <div className="section" id="work-section">
         <Flip left>
-            <h1 className="section__header">{props.sectionName}</h1>
+            <h1 id="work-section__header" className="section__header">{props.sectionName}</h1>
         </Flip>
         
         <div className="section__body" id="work-section__body">
