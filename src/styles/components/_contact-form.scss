@@ -1,0 +1,30 @@
+.contact-form {
+    background-color: lighten($sky, 3%);
+    border-bottom: solid 0.6rem darken($sky, 5%);
+    border-right: solid 0.6rem darken($sky, 5%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $m-size;
+}
+
+.contact-form-wrapper {
+    width: 60rem;
+}
+
+.contact-form__input {
+    background: darken($sky, 5%);
+    border: none;
+    color: white;
+    border-bottom: 0.3rem solid darken($sky, 10%);
+    flex-grow: 1;
+    font-size: $m-size;
+    margin-bottom: $s-size;
+    padding: $s-size;
+}
+
+#contact-form-message {
+    height: 30rem;
+    flex-grow: 0;
+}

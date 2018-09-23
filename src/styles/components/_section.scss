@@ -38,6 +38,7 @@
 /* Work Section */
 #work-section {
     padding-bottom: $xl-size;
+    margin-bottom: 20rem;
 }
 
 #work-section__body {
@@ -52,11 +53,12 @@
     border-top: solid 2rem darken($sky, 4%);
     padding-bottom: 0;
     margin-bottom: 0;
-    height: 80rem;
+    height: 90rem;
 }
 
 #contact-section__header {
     color: white;
+    margin-top: $s-size;
 }
 
 
