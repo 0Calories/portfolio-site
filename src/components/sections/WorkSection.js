@@ -12,7 +12,7 @@ const jobs = [{
     description: 'During my time at Cheetah Networks, I contributed to the development of a system for preventing distracted driving. I was responsible for writing code for an Android application, as well as the firmware of a custom Bluetooth device. I facilitated the core Bluetooth features of the system by designing and implementing the wireless communication system between the application and custom device. I was also responsible for the creation and management of the source code repository, and made various additions and bugfixes to the software.',
     badges: ['C++', 'Java']
 }, {
-    company: 'Cision Canada',
+    company: 'Cision',
     date: 'September 2017 - December 2017',
     description: 'I assisted in the maintenance and development of a REST web API used for scraping and distributing information from news sources. My tasks ranged from working on simple features and bugfixes, as well as the development of scripts used to aid the workflow of other members of the team. I also researched new technologies and demonstrated their viability for internal usage to the team.',
     badges: ['Java']
