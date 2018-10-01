@@ -37,9 +37,9 @@ export default class StarrySky extends React.Component {
 
     initializeStars = () => {
         // Update state only if window size has actually changed
-        if (this.state.width != window.innerWidth || this.state.height != window.innerHeight) {
+        //if (this.state.width != window.innerWidth || this.state.height != window.innerHeight) {
             this.setState({ width: window.innerWidth, height: window.innerHeight });
-        }
+        //}
 
         canvas = this.refs.canvas;
         ctx = canvas.getContext("2d");
@@ -78,21 +78,37 @@ export default class StarrySky extends React.Component {
         }
     };
 
+    isMobile = () => {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
+
     onResize = () => {
         // Call function only if the width is changed (height changes on scroll for mobile devices)
-        if (this.state.width != window.innerWidth) {
+        //if (this.state.width != window.innerWidth) {
+        //    this.initializeStars();
+        //}
+        if (!this.isMobile()) {
             this.initializeStars();
         }
-    }
+    };
+
+    // Workaround function to resize canvas on mobile devices
+    onOrientationChange = () => {
+        setTimeout(() => {
+            this.initializeStars();
+        }, 300);
+    };
 
     componentDidMount() {
         this.initializeStars();
-        window.addEventListener('resize', this.initializeStars);
+        window.addEventListener('resize', this.onResize);
+        window.addEventListener('orientationchange', this.onOrientationChange);
         setInterval(this.drawStars, 1000 / FPS);
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', this.initializeStars);
+        window.removeEventListener('resize', this.onResize);
+        window.removeEventListener('orientationchange', this.onOrientationChange);
     }
 
     render() {
