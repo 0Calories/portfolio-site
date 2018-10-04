@@ -94,9 +94,9 @@ export default class StarrySky extends React.Component {
 
     // Workaround function to resize canvas on mobile devices
     onOrientationChange = () => {
-        setTimeout(() => {
-            this.initializeStars();
-        }, 300);
+        //setTimeout(() => {
+        //    this.initializeStars();
+        //}, 300);
     };
 
     componentDidMount() {
@@ -113,7 +113,7 @@ export default class StarrySky extends React.Component {
 
     render() {
         return (
-            <div className="starry-sky" style={{height: this.state.height}}>
+            <div className="starry-sky" style={{ height: this.state.height}}>
                 <canvas ref="canvas" width={this.state.width * 0.95} height={this.state.height} className="starry-sky__canvas" />
                 <GreetingSign />
             </div>
