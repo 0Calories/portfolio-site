@@ -8,7 +8,7 @@ import WorkBox from '../WorkBox';
 
 const jobs = [{
     company: 'Cheetah Networks',
-    date: 'March 2018 - Present',
+    date: 'March 2018 - October 2018',
     description: 'During my time at Cheetah Networks, I contributed to the development of a system for preventing distracted driving. I was responsible for writing code for an Android application, as well as the firmware of a custom Bluetooth device. I facilitated the core Bluetooth features of the system by designing and implementing the wireless communication system between the application and custom device. I was also responsible for the creation and management of the source code repository, and made various additions and bugfixes to the software.',
     badges: ['C++', 'Java']
 }, {
